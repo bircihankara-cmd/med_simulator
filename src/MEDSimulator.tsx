@@ -817,7 +817,7 @@ const AlarmList: React.FC<{ alarms: Alarm[] }> = ({ alarms }) => (
 
 const RECOMMENDED_FEED: Record<StageCount, number> = { 3: 6, 10: 14 };
 
-export default function MEDSimulator(): JSX.Element {
+export default function MEDSimulator() {
   const [stages, setStages] = useState<StageCount>(3);
   const [mode, setMode] = useState<OperatingMode>("day");
   const [qInKW, setQInKW] = useState<number>(500);
